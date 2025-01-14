@@ -1,0 +1,15 @@
+{
+"scale_drug_INa":0.85307,
+"scale_drug_INaL":0.260425,
+"scale_drug_Ito":0.999305,
+"scale_drug_ICaL":0.799717,
+"scale_drug_IKr":0.373667,
+"scale_drug_IKs":0.93207,
+"scale_drug_IK1":1.0000,
+"scale_drug_IKb":1.0000,
+"scale_drug_INab":1.0000,
+"scale_drug_ICab":1.0000,
+"scale_drug_IpCa":1.0000,
+"scale_drug_Isacns":1.0000,
+"scale_drug_Isack":1.0000
+}
