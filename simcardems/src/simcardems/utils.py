@@ -4,7 +4,11 @@ from pathlib import Path
 
 import dolfin
 import numpy as np
-import ufl
+try:
+    import ufl
+except ImportError:
+    import ufl_legacy as ufl
+
 
 PathLike = typing.Union[Path, str]
 

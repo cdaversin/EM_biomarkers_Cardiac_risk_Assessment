@@ -6,7 +6,11 @@ import matplotlib.pyplot as plt
 import simcardems
 import numpy as np
 import sys
-import ufl
+try:
+    import ufl
+except ImportError:
+    import ufl_legacy as ufl
+
 import typing
 
 

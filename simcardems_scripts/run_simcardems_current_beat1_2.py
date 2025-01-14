@@ -6,7 +6,11 @@ import matplotlib.pyplot as plt
 import simcardems
 import numpy as np
 import sys
-import ufl
+try:
+    import ufl
+except ImportError:
+    import ufl_legacy as ufl
+
 import typing
 
 
@@ -22,7 +26,8 @@ cellmodel="fully_coupled_Tor_Land"
 cell_init_file="" #"init_5000beats.json"
 disease_state="healthy"
 PCL=1000
-load_state=True
+#load_state=True
+load_state=False
 drug_factors_file=sys.argv[2]
 popu_factors_file=sys.argv[1]
 beats_saved=1
