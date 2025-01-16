@@ -10,6 +10,7 @@ docker run -it --name simcardems -v $(pwd):/home ghcr.io/scientificcomputing/fen
 cd /home
 cd simcardems
 python3 -m pip install .
+cd ..
 ```
 
 To run one population model, choose one drug and one model of the population.
@@ -20,7 +21,7 @@ cd simcardems_scripts
 export popu_file="inputPopulation/PoMcontrol_m1/input_params.json"
 export drug_file="drug_factors/CiPA/Astemizole_10_timesFPC.json"
 
-python3 run_simcardems_current_CV_beat1_2.py $popu_file $drug_file
-python3 run_simcardems_current_CV_beat3_4.py $popu_file $drug_file
-python3 run_simcardems_current_CV_beat5.py $popu_file $drug_file
+python3 run_simcardems_current_beat1_2.py $popu_file $drug_file
+python3 run_simcardems_current_beat3_4.py $popu_file $drug_file
+python3 run_simcardems_current_beat5.py $popu_file $drug_file
 ```
